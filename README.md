@@ -1,6 +1,6 @@
 # chinese_crnn
 中文crnn识别以及其模型转onnx
-## 更正（Correction）
+### 更正（Correction）
 更正了[原demo](https://github.com/Sierkinhane/CRNN_Chinese_Characters_Rec/blob/stable/demo.py)图片resize错误的问题
 ### 环境配置（Dev Environments）
 Win10 + torch1.8.1+cu111+cudnn8.1.1
