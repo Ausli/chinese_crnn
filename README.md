@@ -1,5 +1,5 @@
 # chinese_crnn
-中文crnn识别以及其模式转onnx
+中文crnn识别以及其模型转onnx
 ## 更正（Correction）
 更正了[原demo](https://github.com/Sierkinhane/CRNN_Chinese_Characters_Rec/blob/stable/demo.py)图片resize错误的问题
 ### 环境配置（Dev Environments）
@@ -40,7 +40,7 @@ Win10 + torch1.8.1+cu111+cudnn8.1.1
 ```
 **note**: fixed-length training is supported. yet you can modify dataloader to support random length training.   
 
-## Train
+## 训练（Train）
 注：将训练的字符添加至**lib/config/alphabets.py**后，再进行训练，否则训练将出错
 ```angular2html
    [run] python train.py --cfg lib/config/360CC_config.yaml
@@ -54,9 +54,12 @@ or [run] python train.py --cfg lib/config/OWN_config.yaml
    [run] tensorboard --logdir log
 ```
 
-## Demo
+## 演示（Demo）
 ```angular2html
    [run] python demo.py --image_path images/test.png --checkpoint output/checkpoints/mixed_second_finetune_acc_97P7.pth
 ```
+## 转换成onnx模型（Convert to onnx model）
+将export_onnx.py的模型位置替换成你自己的位置，在onnx_test.py进行测试
+
 # 参考资料（References）
 https://github.com/Sierkinhane/CRNN_Chinese_Characters_Rec
