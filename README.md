@@ -41,7 +41,7 @@ Win10 + torch1.8.1+cu111+cudnn8.1.1
 **note**: fixed-length training is supported. yet you can modify dataloader to support random length training.   
 
 ## Train
-注：将训练的字符添加至**lib/config/alphabets.py**后，再进行训练否则训练出错
+注：将训练的字符添加至**lib/config/alphabets.py**后，再进行训练，否则训练将出错
 ```angular2html
    [run] python train.py --cfg lib/config/360CC_config.yaml
 or [run] python train.py --cfg lib/config/OWN_config.yaml
